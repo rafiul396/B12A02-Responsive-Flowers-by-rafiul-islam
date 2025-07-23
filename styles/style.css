@@ -187,6 +187,7 @@ html {
     align-items: center;
     gap: 6rem;
     position: relative;
+    margin-bottom: 13rem;
 }
 
 .loving-title {
@@ -214,7 +215,97 @@ html {
     top: -123px;
 }
 
+/* styling code for collage section */
+.collage-section {
+    width: 100%;
+    min-height: 70vh;
+    gap: 2.5rem 2.8rem;
+    margin-bottom: 12rem;
+    grid-template-areas: "bloom zabo zabo"
+                         "ana zabo zabo";
+}
 
+.img1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: bloom;
+    border-radius: 14px;
+}
+
+.mid-div {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000040;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    /* opacity: .5; */
+}
+
+.img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: ana;
+    border-radius: 14px;
+}
+.img3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: zabo;
+    border-radius: 14px;
+}
+
+.discount-text1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.discount-text2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.collage-btn1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.collage-btn2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
 
 /* Responsive area */
 @media screen and (max-width: 576px) {
@@ -312,6 +403,8 @@ html {
 
     .loving-section {
         flex-direction: column;
+        gap: 1.8rem;
+        margin-bottom: 14rem;
     }
 
     .left-side-of-loving-sec {
@@ -326,6 +419,36 @@ html {
 
     .points {
         font-size: 1.4rem;
+    }
+
+    .point-holder {
+        margin-left: 2rem;
+    }
+
+    /* responsive code for collage section */
+    .collage-section {
+        display: block;
+        margin-top: 5rem;
+    }
+
+    .img1, .img2, .img3 {
+        width: calc(100% - 3.2rem);
+        height: 25rem;
+    }
+
+    .img2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .respon-text1 {
+        font-size: 2rem;
+    }
+
+    .respon-text2 {
+        font-size: 1.6rem;
+        margin-top: 1.9rem;
+        /* margin-bottom: 1.9rem; */
     }
 }
 
